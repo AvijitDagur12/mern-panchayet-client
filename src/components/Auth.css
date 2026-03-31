@@ -160,7 +160,6 @@
   overflow-y: auto;
   padding-right: 12px;
 }
-/* 
 /* Custom Scrollbar */
 .citizen-register-form::-webkit-scrollbar {
   width: 6px;
@@ -178,7 +177,7 @@
 
 .citizen-register-form::-webkit-scrollbar-thumb:hover {
   background: #1e4a20;
-} */
+}
 
 /* Form Grid for Register */
 .citizen-form-grid {
