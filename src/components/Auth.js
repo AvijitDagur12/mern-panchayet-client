@@ -36,7 +36,7 @@ const Auth = () => {
     try {
       if (isLogin) {
         // LOGIN
-        const res = await fetch("https://checkirpala.onrender.com/api/login", {
+        const res = await fetch("https://mern-panchayet-server.onrender.com/api/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -71,7 +71,7 @@ const Auth = () => {
         data.append("password", formData.password);
         if (formData.photo) data.append("photo", formData.photo);
 
-        const res = await fetch("https://checkirpala.onrender.com/api/register", {
+        const res = await fetch("https://mern-panchayet-server.onrender.com/api/register", {
           method: "POST",
           body: data,
         });

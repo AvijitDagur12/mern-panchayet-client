@@ -29,7 +29,7 @@ const Support = () => {
     const fetchComplaints = useCallback(async () => {
         try {
             setLoading(true);
-            const response = await axios.get('http://localhost:5000/api/contacts');
+            const response = await axios.get('https://mern-panchayet-server.onrender.com/api/contacts');
             if (response.data.success) {
                 setComplaints(response.data.data);
                 calculateStats(response.data.data);
@@ -54,7 +54,7 @@ const Support = () => {
     // Update complaint status
     const updateStatus = async (id, newStatus) => {
         try {
-            const response = await axios.put(`http://localhost:5000/api/contact/${id}`, {
+            const response = await axios.put(`https://mern-panchayet-server.onrender.com/api/contact/${id}`, {
                 status: newStatus.toLowerCase()
             });
 
@@ -140,7 +140,7 @@ const Support = () => {
     // Get image URL
     const getImageUrl = (image) => {
         if (!image) return null;
-        const baseUrl = 'http://localhost:5000';
+        const baseUrl = 'https://mern-panchayet-server.onrender.com';
         if (image.startsWith('http')) return image;
         if (image.startsWith('/uploads')) return `${baseUrl}${image}`;
         return `${baseUrl}/uploads/${image}`;

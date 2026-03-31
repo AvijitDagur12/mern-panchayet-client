@@ -42,7 +42,7 @@ const AdminDashboard = () => {
     setLoading(true);
     try {
       const [appRes] = await Promise.all([
-        axios.get('https://checkirpala.onrender.com/api/admin/applications')
+        axios.get('https://mern-panchayet-server.onrender.com/api/admin/applications')
       ]);
       
       const apps = appRes.data || [];
