@@ -92,7 +92,7 @@ a {
   font-weight: bold;
   transition: all 0.3s;
   -webkit-text-stroke: 0.5px black;
-  text-stroke: 0.5px black;
+  -webkit-text-stroke: 0.5px black;
 }
 
 /* Hover effect */
